@@ -2,8 +2,21 @@
   --primary: #00ff41;
   --secondary: #00882A;
   --bg: #000000;
+}
 
-  }
+body {
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+  height: 50vw;
+  padding: 10px;
+  margin:10px;
+}
 
 .text-primary {
   color: var(--primary);
@@ -15,19 +28,7 @@
   font-family: "JetBrains Mono", monospace;
   }
 
-body {
-    background-color: var(--bg);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-main {
-  height: 50vw;
-  padding: 10px;
-  margin:10px;
-}
+/* NAVIGATION BAR */
 
 .nav-bar {
   justify-content: center;
@@ -58,6 +59,9 @@ main {
   text-decoration: none;
   color: var(--primary);
 }
+
+
+/* TERMINAL BOX */
 
 .terminal-header {
   height: 2vw;
