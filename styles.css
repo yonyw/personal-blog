@@ -1,0 +1,89 @@
+:root {
+  --primary: #00ff41;
+  --secondary: #00882A;
+  --bg: #000000;
+
+  }
+
+.text-primary {
+  color: var(--primary);
+  font-family: "Press Start 2P", system-ui;
+  }
+
+.text-secondary {
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  }
+
+body {
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+main {
+  height: 50vw;
+  padding: 10px;
+  margin:10px;
+}
+
+.nav-bar {
+  justify-content: center;
+  display: flex;
+  height: 2vw;
+  gap: 2.5rem;
+  padding: 1rem;
+  border:1px solid var(--secondary);
+  transition: color 1s ease, border-color 1s ease;
+}
+
+.nav-bar a {
+  padding: 7px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.nav-bar a.home-tab {
+  color: black;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.nav-bar a:not(.home-tab):hover {
+  color: var(--primary);
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.terminal-header {
+  height: 2vw;
+  background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+  border: 1px solid var(--primary);
+  margin: 0 auto;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 300;
+  opacity: 0.6;
+  padding-top: 3px;
+  padding-left: 5px;
+  color: var(--primary)
+}
+
+.terminal-box {
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+  margin: 0 auto;
+  width: 80vw;
+  height: 20vw;
+  border: 1px solid var(--primary);
+}
+
+.terminal-text {
+  padding: 10px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--primary);
+  line-height: 1.4;
+}
+

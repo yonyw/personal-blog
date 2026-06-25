@@ -1,9 +1,0 @@
-:root {
-  background-color: black;
-  --primary: #00ff41;
-  --secondary: #00882A;
-}
-.text-primary {
-  color: var(--primary);
-  font-family: "Press Start 2P", system-ui;
-}
