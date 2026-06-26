@@ -13,9 +13,8 @@ body {
 }
 
 main {
-  height: 50vw;
-  padding: 10px;
-  margin:10px;
+    width: 80vw;
+    margin: 20px auto;
 }
 
 .text-primary {
@@ -28,8 +27,9 @@ main {
   font-family: "JetBrains Mono", monospace;
   }
 
-/* NAVIGATION BAR */
-
+/* =============== */
+/* NAVIGATION BAR  */
+/* ==============  */
 .nav-bar {
   justify-content: center;
   display: flex;
@@ -47,21 +47,22 @@ main {
   text-decoration: none;
 }
 
-.nav-bar a.home-tab {
+.nav-bar a.active {
   color: black;
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
 
-.nav-bar a:not(.home-tab):hover {
+.nav-bar a:not(.active):hover {
   color: var(--primary);
   background-color: color-mix(in oklab, var(--primary) 10%, transparent);
   text-decoration: none;
   color: var(--primary);
 }
 
-
-/* TERMINAL BOX */
+/* ======================== */
+/* TERMINAL BOX HOME PAGE   */
+/* ======================== */
 
 .terminal-header {
   height: 2vw;
@@ -76,7 +77,7 @@ main {
   color: var(--primary)
 }
 
-.terminal-box {
+.terminal-row-1 {
   background-color: color-mix(in oklab, var(--primary) 10%, transparent);
   margin: 0 auto;
   width: 80vw;
@@ -91,3 +92,32 @@ main {
   line-height: 1.4;
 }
 
+.terminal-row-2 {
+  display: flex;
+}
+.terminal-box-2-1 img {
+    height: 25vw;
+    width: 25vw;
+    margin-top: 2vw;
+    border: 1px solid var(--primary);
+}
+.terminal-box-2-2 {
+    height: 25vw;
+    width: 55vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    border: 1px solid var(--primary);
+    background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+
+}
+
+/* ======================== */
+/* TERMINAL BOX ABOUT PAGE   */
+/* ======================== */
+
+.avatar {
+  margin-top: 2vw;
+  width: 20vw;
+  height: 20vw;
+  border: 1px solid var(--primary);
+}
