@@ -4,28 +4,40 @@
   --bg: #000000;
 }
 
-body {
+
+body, main {
     background-color: var(--bg);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-}
-
-main {
-    width: 80vw;
     margin: 20px auto;
+    width: 80vw;
 }
 
-.text-primary {
-  color: var(--primary);
-  font-family: "Press Start 2P", system-ui;
-  }
+/* ================= */
+/* GLOBAL PROPERTIES  */
+/* ================  */
 
-.text-secondary {
-  color: var(--secondary);
+.terminal-header {
+  height: 2vw;
+  background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+  border: 1px solid var(--primary);
+  margin: 0 auto;
   font-family: "JetBrains Mono", monospace;
-  }
+  font-weight: 300;
+  opacity: 0.6;
+  padding-top: 3px;
+  padding-left: 5px;
+  color: var(--primary)
+}
+
+.terminal-text {
+  padding: 10px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--primary);
+  line-height: 1.4;
+}
 
 /* =============== */
 /* NAVIGATION BAR  */
@@ -64,19 +76,6 @@ main {
 /* TERMINAL BOX HOME PAGE   */
 /* ======================== */
 
-.terminal-header {
-  height: 2vw;
-  background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
-  border: 1px solid var(--primary);
-  margin: 0 auto;
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 300;
-  opacity: 0.6;
-  padding-top: 3px;
-  padding-left: 5px;
-  color: var(--primary)
-}
-
 .terminal-row-1 {
   background-color: color-mix(in oklab, var(--primary) 10%, transparent);
   margin: 0 auto;
@@ -84,14 +83,6 @@ main {
   height: 20vw;
   border: 1px solid var(--primary);
 }
-
-.terminal-text {
-  padding: 10px;
-  font-family: "JetBrains Mono", monospace;
-  color: var(--primary);
-  line-height: 1.4;
-}
-
 .terminal-row-2 {
   display: flex;
 }
@@ -111,13 +102,82 @@ main {
 
 }
 
+.terminal-row-3 {
+  display: flex;
+}
+
+.terminal-box-3-1 {
+  height: 25vw;
+  width: 40vw;
+  margin-top: 2vw;
+  border: 1px solid var(--primary);
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+}
+
+.terminal-box-3-2 {
+  margin-left: 2vw;
+  height: 25vw;
+  width: 25vw;
+  margin-top: 2vw;
+  border: 1px solid var(--primary);
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+}
+
+.terminal-box-3-3 {
+  position: relative; 
+  margin-left: 2vw;
+  height: 12vw;
+  width: 15vw;
+  margin-top: 2vw;
+  border: 1px solid var(--primary);
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+  z-index: 2;
+}
+
+.terminal-text a {
+  text-decoration: none;
+  padding: 10px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+.terminal-text a:hover {
+  text-decoration: underline;
+}
+
+.mini-img-3-4 {
+  position: relative; 
+  margin-top: 3vw;
+  width: 14vw;
+  height: 12vw;
+  border: 1px solid var(--primary);
+  z-index: 1;
+
+}
 /* ======================== */
 /* TERMINAL BOX ABOUT PAGE   */
 /* ======================== */
+.terminal-about-1 {
+  display:flex;
+}
+
+.terminal-about-2 {
+  display:flex;
+}
+
+.terminal-box-4-1 {
+  margin-left: 2vw;
+  height: 25vw;
+  width: 40vw;
+  margin-top: 2vw;
+  border: 1px solid var(--primary);
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+}
 
 .avatar {
-  margin-top: 2vw;
-  width: 20vw;
-  height: 20vw;
+  margin:  auto;
+  width: 21vw;
+  height: 21vw;
   border: 1px solid var(--primary);
 }
