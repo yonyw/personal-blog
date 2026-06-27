@@ -31,7 +31,7 @@
           $ INITIALIZING SYSTEM... <br><br>
           $ LOADING KERNEL MODULES... [OK] <br><br>
           $ ESTABLISHING SECURE CONNECTION... [OK] <br><br>
-          ... WELCOME!!
+          ...WELCOME!
         </div>
     </section>
 
@@ -70,16 +70,27 @@
 
       <!-- Current Transmission Window-->
       <div class="terminal-box current-transmission">
-        <div class="terminal-header">
-          /$CURRENT_TRANSMISSION...
-        </div>
-      </div>
+        <div class="terminal-header">/$CURRENT_TRANSMISSION...</div>
 
+  <div class="article-preview">
+
+    <img src="assets/images/enter-dunegon.jpeg" alt="Project thumbnail">
+
+    <div class="article-content">
+      <h3 id="post-title"></h3>
+      <p id="post-desc"></p>
+      <a id="post-link" href="#">[view post]</a>
+    </div>
+
+  </div>
+
+</div>
       <!-- Previous Transmission Window-->
-      <div class="terminal-box transmission-log">
+      <div class="terminal-box previous-transmissions">
         <div class="terminal-header">
           /$PREVIOUS_TRANSMISSIONS...
         </div>
+        <div id="previous-posts"></div>
       </div>
 
       <!-- Additional Links Window-->
@@ -89,10 +100,10 @@
         </div>
 
           <div class="terminal-text">
-            ><a href="#">journal</a><br>
-            ><a href="#">gallery</a><br>
-            ><a href="#">bookshelf</a><br>
-            ><a href="#">arcade</a><br>
+            ><a href="#">journal...</a><br>
+            ><a href="#">gallery...</a><br>
+            ><a href="#">bookshelf...</a><br>
+            ><a href="#">arcade...</a><br>
           </div>
         <!-- Side bar image-->
           <img
@@ -103,6 +114,6 @@
     </section>
 
   </main>
-
+  <script src="scripts/posts.js" defer></script>
 </body>
 </html>

@@ -27,7 +27,7 @@
   margin-top: 2vw;
 }
 
-.transmission-log {
+.previous-transmissions {
   width: 25vw;
   height: 25vw;
   margin-top: 2vw;
@@ -42,9 +42,66 @@
   position: relative;
 }
 
+
 .sidebar-icon {
   width: 14vw;
   height: 12vw;
   margin-top: 3vw;
   border: 1px solid var(--primary);
+}
+
+/* Current Transmission Post  */
+.article-preview {
+  margin-left: 1vw;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.article-preview img {
+  margin-top: 1vw;
+  border: 1px solid var(--primary);
+  width: 25vw;
+  height: 20vw;
+}
+
+.article-content h3 {
+  margin-top: 5vw;
+  color: var(--primary);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.article-content p {
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.article-content a {
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--secondary);
+}
+
+.article-content a:hover {
+    color: var(--primary);
+}
+
+/* Previous Transmission Posts */
+.previous-posts {
+  text-decoration: none;
+  color: var(--primary);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.previous-posts h4 {
+  margin-left: 1vw;
+  text-decoration: underline;
+  color: var(--primary);
+}
+.previous-posts p {
+  margin-left: 1vw;
+  color: var(--secondary);
 }
