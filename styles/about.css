@@ -1,0 +1,13 @@
+.whoami {
+  height: 25vw;
+  width: 55vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.avatar {
+  margin:  auto;
+  width: 21vw;
+  height: 21vw;
+  border: 1px solid var(--primary);
+}

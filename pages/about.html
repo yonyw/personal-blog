@@ -3,41 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website</title>
-  <link rel="stylesheet" href="/styles.css">
+  <title>About | Yony OS</title>
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../styles/about.css">
 </head>
-<body>
+
+<body>d
+
+  <!-- Nav bar-->
   <nav class="nav-bar">
     <a href="../index.html">>INIT</a>
-    <a class="active" href="/pages/about.html">>ABOUT</a>
-    <a href="/pages/projects.html">>PROJECTS</a>
-    <a href="/pages/contact.html">>CONTACT</a>
+    <a class="active" href="about.html">>ABOUT</a>
+    <a href="projects.html">>PROJECTS</a>
+    <a href="contact.html">>CONTACT</a>
   </nav>
-  <main>
-    <div class="terminal-about-1"> 
-      <div class="terminal-box-2-2">
-          <div class="terminal-header">/$WHOAMI?...</div>
-          <div class="terminal-text">
-            > USER : YONATAN WOUBE <br> <br>
-            > LOCATION : Virginia, USA <br> <br>
-            > EDUCATION : COMPUTER SCIENCE @ JMU <br> <br>
-            > GOALS: Make money.<br> <br>
-            > HOBBIES: Guitar, Reading, Playing Video games, coding <br> <br>
-          </div>
-    </div>
-    <img src="/assets/ascii-face.jpeg" class="avatar">
 
-    </div>
-    <div class="terminal-about-2">
-        <div class="terminal-box-3-2"> 
-          <div class="terminal-header">/~SKILLS...</div>
+  <main>
+
+    <!-- Terminal Row 1 -->
+    <section class="terminal-row">
+
+      <!-- Whoami Window-->
+      <div class="terminal-box whoami">
+        <div class="terminal-header">/$WHOAMI...</div>
+          <div class="terminal-text">
+            > USER : YONATAN WOUBE <br><br>
+            > LOCATION : Virginia, USA <br><br>
+            > EDUCATION : COMPUTER SCIENCE @ JMU <br><br>
+            > GOALS : Make money <br><br>
+            > HOBBIES : Guitar, Reading, Video Games, Coding <br><br>
           </div>
-        <div class="terminal-box-4-1">  
-          <div class="terminal-header">/~MISSION...</div>
-        </div>
       </div>
 
+      <!-- Side bar image-->
+      <img src="../assets/images/ascii-face.jpeg" class="avatar" alt="Avatar">
+
+    </section>
+
+    <!-- Terminal Row 2 -->
+    <section class="terminal-row">
+
+      <!-- SKills Window-->
+      <div class="terminal-box skills">
+        <div class="terminal-header">/~SKILLS...</div>
+          <div class="terminal-text">
+           <!-- add skills later -->
+          </div>
+      </div>
+
+      <!-- Mission Window-->
+      <div class="terminal-box mission">
+        <div class="terminal-header">/~MISSION...</div>
+          <div class="terminal-text">
+            <!-- add mission later -->
+          </div>
+      </div>
+    </section>
 
   </main>
+
 </body>
 </html>

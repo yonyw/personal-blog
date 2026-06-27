@@ -1,0 +1,47 @@
+.boot-screen {
+  width: 80vw;
+  height: 20vw;
+  margin-top: 3vw;
+}
+
+.globe-panel img {
+  width: 25vw;
+  height: 25vw;
+  margin-top: 2vw;
+  border: 1px solid var(--primary);
+}
+
+.readme {
+  width: 55vw;
+  height: 25vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+
+.current-transmission {
+  width: 40vw;
+  height: 25vw;
+  margin-top: 2vw;
+}
+
+.transmission-log {
+  width: 25vw;
+  height: 25vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+
+.quick-links {
+  width: 15vw;
+  height: 12vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  position: relative;
+}
+
+.sidebar-image {
+  width: 14vw;
+  height: 12vw;
+  margin-top: 3vw;
+  border: 1px solid var(--primary);
+}

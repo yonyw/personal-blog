@@ -32,6 +32,8 @@ body, main {
   color: var(--primary)
 }
 
+
+
 .terminal-text {
   padding: 10px;
   font-family: "JetBrains Mono", monospace;
@@ -42,7 +44,15 @@ body, main {
 /* =============== */
 /* NAVIGATION BAR  */
 /* ==============  */
+
 .nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000000;
+
   justify-content: center;
   display: flex;
   height: 2vw;
@@ -81,6 +91,7 @@ body, main {
   margin: 0 auto;
   width: 80vw;
   height: 20vw;
+  margin-top: 3vw;
   border: 1px solid var(--primary);
 }
 .terminal-row-2 {

@@ -1,0 +1,93 @@
+:root {
+  --primary: #00ff41;
+  --secondary: #00882A;
+  --bg: #000000;
+}
+
+/* layout */
+body,
+main {
+  background-color: var(--bg);
+  margin: 20px auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =============== */
+/* NAVIGATION BAR  */
+/* ==============  */
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000000;
+
+  justify-content: center;
+  display: flex;
+  height: 2vw;
+  gap: 2.5rem;
+  padding: 1rem;
+  border:1px solid var(--secondary);
+  transition: color 1s ease, border-color 1s ease;
+}
+
+.nav-bar a {
+  padding: 7px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.nav-bar a.active {
+  color: black;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.nav-bar a:not(.active):hover {
+  color: var(--primary);
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* TERMINAL SYSTEM */
+.terminal-box {
+  border: 1px solid var(--primary);
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+}
+
+.terminal-header {
+  height: 2vw;
+  padding: 3px 5px;
+  color: var(--primary);
+  font-family: "JetBrains Mono", monospace;
+  opacity: 0.6;
+  border: 1px solid var(--primary);
+  background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+}
+
+.terminal-text {
+  padding: 10px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+.terminal-text a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.terminal-text a:hover {
+  text-decoration: underline;
+}
+
+/* ROW LAYOUT */
+.terminal-row {
+  display: flex;
+}
