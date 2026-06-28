@@ -68,7 +68,10 @@ body, main {
   height: 2vw;
   padding: 3px 5px;
   color: var(--primary);
+  
   font-family: "JetBrains Mono", monospace;
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
+
   opacity: 0.6;
   border: 1px solid var(--primary);
   background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
@@ -79,6 +82,7 @@ body, main {
   font-family: "JetBrains Mono", monospace;
   color: var(--primary);
   line-height: 1.4;
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
 }
 
 .terminal-text a {

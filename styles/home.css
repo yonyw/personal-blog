@@ -1,107 +1,122 @@
 /* Terminal Row 1 */
 .boot-screen {
-  width: 80vw;
-  height: 20vw;
-  background-color: color-mix(in oklab, #00882A 20%, transparent);
+width: 80vw;
+height: 20vw;
+background-color: color-mix(in oklab, #00882A 20%, transparent);
 }
-
 /* Terminal Row 2 */
 .globe-panel img {
-  width: 25vw;
-  height: 25vw;
-  margin-top: 2vw;
-  border: 1px solid var(--primary);
+width: 25vw;
+height: 25vw;
+margin-top: 2vw;
+border: 1px solid var(--primary);
 }
-
 .readme {
-  width: 55vw;
-  height: 25vw;
-  margin-top: 2vw;
-  margin-left: 2vw;
+width: 55vw;
+height: 25vw;
+margin-top: 2vw;
+margin-left: 2vw;
 }
-
 /* Terminal Row 3 */
 .current-transmission {
-  width: 40vw;
-  height: 25vw;
-  margin-top: 2vw;
+width: 40vw;
+height: 25vw;
+margin-top: 2vw;
 }
-
 .previous-transmissions {
-  width: 25vw;
-  height: 25vw;
-  margin-top: 2vw;
-  margin-left: 2vw;
+width: 25vw;
+height: 25vw;
+margin-top: 2vw;
+margin-left: 2vw;
 }
-
 .quick-links {
-  width: 15vw;
-  height: 12vw;
-  margin-top: 2vw;
-  margin-left: 2vw;
-  position: relative;
+width: 15vw;
+height: 12vw;
+margin-top: 2vw;
+margin-left: 2vw;
+position: relative;
 }
-
-
 .sidebar-icon {
-  width: 14vw;
-  height: 12vw;
-  margin-top: 3vw;
-  border: 1px solid var(--primary);
+width: 14vw;
+height: 12vw;
+margin-top: 3vw;
+border: 1px solid var(--primary);
 }
-
 /* Current Transmission Post  */
 .article-preview {
-  margin-left: 1vw;
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  text-decoration: none;
+margin-left: 1vw;
+display: flex;
+gap: 1rem;
+align-items: flex-start;
+text-decoration: none;
 }
-
 .article-preview img {
-  margin-top: 1vw;
-  border: 1px solid var(--primary);
-  width: 25vw;
-  height: 20vw;
+margin-top: 1vw;
+border: 1px solid var(--primary);
+width: 25vw;
+height: 20vw;
 }
 
 .article-content h3 {
   margin-top: 5vw;
   color: var(--primary);
   font-family: "JetBrains Mono", monospace;
+  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .article-content p {
   color: var(--secondary);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.9rem;
+  font-size: clamp(0.6rem, 1.3vw, 0.9rem);
   line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.article-content {
+  overflow: hidden;
+  min-width: 0;
+  flex: 1;
 }
 
 .article-content a {
-  font-size: 0.8rem;
-  font-family: "JetBrains Mono", monospace;
-  color: var(--secondary);
+font-family: "JetBrains Mono", monospace;
+font-size: clamp(0.6rem, 2vw, 1rem);
+color: var(--secondary);
 }
-
 .article-content a:hover {
-    color: var(--primary);
+color: var(--primary);
 }
-
 /* Previous Transmission Posts */
 .previous-posts {
-  text-decoration: none;
-  color: var(--primary);
-  font-family: "JetBrains Mono", monospace;
+text-decoration: none;
+color: var(--primary);
+font-family: "JetBrains Mono", monospace;
 }
-
 .previous-posts h4 {
-  margin-left: 1vw;
-  text-decoration: underline;
-  color: var(--primary);
+margin-left: 1vw;
+text-decoration: underline;
+color: var(--primary);
+font-size: clamp(0.6rem, 1.2vw, 0.9rem);
 }
 .previous-posts p {
-  margin-left: 1vw;
-  color: var(--secondary);
+margin-left: 1vw;
+color: var(--secondary);
+font-size: clamp(0.5rem, 1.1vw, 0.8rem);
+}
+#post-title {
+font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+}
+#post-desc {
+font-size: clamp(0.6rem, 1.3vw, 0.9rem);
 }
