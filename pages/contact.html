@@ -19,10 +19,16 @@
   <main>
     <section class="terminal-row">
       <div class="terminal-box contact-content">
-        <div class="terminal-header"></div>
+        <div class="terminal-header">/$CONTACT...</div>
+        <div id="terminal-output"></div>
+        <div class="terminal-input-row">
+          <span class="prompt">user@yony-os:~$</span>
+          <input type="text" id="terminal-input"  autocomplete="off" spellcheck="false">
+        </div>
       </div>
     </section>
   </main>
+  <script src="../scripts/terminal.js" defer></script>
 
 </body>
 </html>

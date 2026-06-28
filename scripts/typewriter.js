@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "",
     "> EDUCATION : COMPUTER SCIENCE @ JMU",
     "",
-    "> GOALS : Make money",
+    "> GOALS : Make money$$$",
     "",
-    "> HOBBIES : Guitar, Reading, Video Games, Coding",
+    "> HOBBIES : Guitar, Reading, Video Games, Programming",
   ]);
 });

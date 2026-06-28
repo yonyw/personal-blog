@@ -1,6 +1,48 @@
+/* Terminal Styling */
 .contact-content {
-  margin-top: 4vw;
   width: 80vw;
   height: 20vw;
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
 }
 
+#terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5vw 1vw;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  padding: 0.5vw 1vw;
+  border-top: 1px solid var(--primary);
+}
+
+.prompt {
+  color: var(--primary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(0.6rem, 1.2vw, 0.9rem);
+  white-space: nowrap;
+}
+
+#terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(0.6rem, 1.2vw, 0.9rem);
+  flex: 1;
+  caret-color: var(--primary);
+}
+
+#terminal-output::-webkit-scrollbar {
+  display: none;
+}
+
+#terminal-output {
+  scrollbar-width: none;
+}
