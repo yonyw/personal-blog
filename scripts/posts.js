@@ -16,7 +16,7 @@ const posts = [
   },
   {
     title: "Certified Cloud Practitioner (CCP)",
-    desc: "",
+    desc: "Started exploring cloud infrastructure through AWS and took CCP exam to test my knowledge.",
     link: "pages/projects.html"
   }
 ];

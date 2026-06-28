@@ -1,13 +1,14 @@
 /* Terminal Row 1 */
 .whoami {
-  height: 25vw;
+  height: 20vw;
   width: 55vw;
   margin-top: 3vw;
   margin-bottom: 2vw;
 }
 
 .avatar {
-  margin:  auto;
+  margin: auto;
+  margin-top: 3vw;
   width: 21vw;
   height: 21vw;
   border: 1px solid var(--primary);
@@ -15,13 +16,42 @@
 
 .skills {
   margin-top: 2vw;
-  width: 40vw;
+  width: 23vw;
   height: 20vw;
   margin-right: 2vw;
 }
 
 .mission {
   margin-top: 2vw;
-  width: 40vw;
+  width: 65vw;
   height: 20vw;
+}
+
+/* Skills window styling */
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 0.5vw;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--primary);
+  font-size: clamp(0.6rem, 1.3vw, 0.9rem);
+}
+
+.skill-name {
+  width: 8vw;
+}
+
+.skill-bar {
+  color: var(--primary);
+}
+
+.skill-percent {
+  color: var(--secondary);
+}
+
+#skills-text {
+  margin-top: 1vw;
+  margin-left: 1vw;
 }

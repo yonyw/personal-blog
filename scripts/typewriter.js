@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "> USER : YONATAN WOUBE",
     "",
     "> LOCATION : Virginia, USA",
-    "-----------------------",
+    "",
     "> EDUCATION : COMPUTER SCIENCE @ JMU",
     "",
     "> GOALS : Make money",
